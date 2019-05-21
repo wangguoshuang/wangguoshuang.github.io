@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F05%2F15%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title></title>
+    <url>%2F2019%2F05%2F21%2FDocker%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[Docker虚拟机常用命令首先更新软件包（系统为centos7） yum install update 安装Docker虚拟机 yum install Docker 2.运行、重启、关闭Docker虚拟机 server docker start/restart/stop 3.搜索镜像 docker search 镜像名称 4.下载镜像 docker pull 镜像名称 5.查看镜像 docker images 6.删除镜像 docker rmi 镜像名称 7.运行容器 docker run -it(呈现交互界面) -p(映射端口) 9000:3306 （宿主机：容器） -v (挂载参数)宿主目录：容器目录 --privileged(最大权限) --name(命名) mymysql mysql bash(交互模式) 8.查看容器 docker ps -a 9.停止、挂起、恢复容器 docker stop/pause/unpause 容器ID 10.查看容器信息 docker inspect 容器ID 11.删除容器 docker rm 容器ID 12.数据卷创建、删除、查看管理 docker volume create /rm/inspect 数据卷名称 13.网络管理 docker network ls 查看网络信息 docker network create --subnet = 网段 网络名称 docker network rm 网络名称]]></content>
   </entry>
 </search>
